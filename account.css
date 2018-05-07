@@ -1,0 +1,127 @@
+
+
+body{
+  background-color: #f5f4f4;
+}
+.form{
+ text-align: center
+}
+
+p{
+  text-align: center;
+  font-size: 40px
+}
+
+.btn{
+  font-weight: bold;
+  color: white;
+  background-color:  #f17e1e;
+  border-radius: 4px;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-style:solid;
+  outline: none;
+  border: transparent;
+  height: 40px;
+}
+
+.btn:active{
+background-color:  #9c5921
+}
+
+input{
+    border-radius: 4px;
+    border-style:solid;
+    outline: none;
+    border-color:  #ececec
+
+}
+
+#birth{
+  width:200px;
+}
+
+#image{
+  width:150px;
+
+}
+
+#image:active{
+  border:10px
+}
+
+.inline-block{
+    display: float
+  }
+
+#bd{
+  margin-left: 30px;
+  color: #E4DBDB
+}
+
+.part1, .part2{
+   display:inline;
+}
+
+#form-1 input{
+    display:block;
+}
+
+.center{
+  display: inline-block;
+}
+
+#form-3{
+  text-align:center;
+}
+
+
+#form-4-boy{
+ display: flex;
+ text-align: center;
+
+}
+
+#next-b, #next-c{
+  display: inline;
+  padding: 20px
+}
+
+#form-4-girl .btn{
+  margin-top: 50px
+}
+
+
+#form-4-boy .btn{
+  margin-top: 50px
+}
+
+
+
+
+
+
+
+div {
+
+    text-align:center;
+}
+.MyList {
+
+    list-style:none;
+    text-align:left;
+    width:225px;
+    display:inline-block;
+    padding:0;
+    margin:0;
+}
+.MyList li {
+
+    list-style-type:none;
+    width:225px;
+}
+.MyList li label {
+    display:inline-block;
+    width:185px;
+    padding:2px 10px 0px 8px;
+}

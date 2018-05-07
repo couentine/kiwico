@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="account.css">
+
+</head>
+<body>
+
+<div class="form "  id="form-1">
+  <p> What is the child's <b>name</b>?</p>
+  <div class= 'center '>
+    <label for="first-name">First Name</label>
+    <input id='name' type="text" name="fname" placeholder="Steve">
+  </div>
+  <div  class= 'center'>
+    <label for="last-name">Last Name</label>
+    <input type="text" name="lname" placeholder="Kiwi">
+  </div>
+  <br/><br/>
+
+    <button class="btn" id='submit' type="button" onclick="function()" value="Next >>">Next >></button>
+  </div>
+
+
+
+
+
+<div class="form" id="form-2" style="display:none;">
+ <p id="output"></p>
+<img id="birth" src="letscelebrate.png" alt="Birthday"><br><br>
+  <input type="date"  id= "bd" name="bday" style=" text-align: center"><br><br>
+  <button class="btn" id="next" type="button" onclick="myFunction()" value="Next >>">Next >></button>
+</form>
+
+</div>
+
+
+
+
+<div class="form-3 form" id="form-3" style="display:none;">
+<p id="output2"></p>
+<div class="inline-block" id="next-b"><a href=#form-4-boy>
+<img id="image" name="boy" src="gender-boy.png" alt="boy"  onclick="myFunction2()"></a>
+</div>
+<div class="inline-block" id="next-c"><a href=#form-4-girl>
+<img id="image" name="girl" src="gender-girl.png" alt="girl"   onclick="myFunction3()"></a>
+</div>
+
+</form>
+</div>
+
+<div class="form-4-boy form" id= "form-4-boy" style="display:none;">
+    <p>What is his <b>relationship</b> with you?</p>
+
+    <div>
+        <ul class="MyList">
+            <li><input id="i1" type="radio" /><label for="i1" value="son">Son</label></li>
+            <li><input id="i2" type="radio" /><label for="i2" value="Grandson">Grandson</label></li>
+            <li><input id="i3" type="radio" /><label for="i3" value="nephew">Nephew</label></li>
+
+        </ul>
+        <ul class="MyList">
+            <li><input id="i6" type="radio" /><label for="i6" value="family-friend">Family Friend</label></li>
+            <li><input id="i7"type="radio" /><label for="i7"  value="other">Other</label></li>
+            <li><label for="i7"  value="other"></label></li>
+
+        </ul>
+    </div>
+
+    <input class="btn btnl" type="button" onclick="formSubmit()" value="Done!!">
+
+</div>
+
+
+<div class="form-4-girl form" id= "form-4-girl" style="display:none;">
+    <p>What is her <b>relationship</b> with you?</p>
+    <div>
+        <ul class="MyList">
+            <li><input id="i1" type="radio" /><label for="i1" value="daughter">Daughter</label></li>
+            <li><input id="i2" type="radio" /><label for="i2" value="Granddaughter">Granddaughter</label></li>
+            <li><input id="i3" type="radio" /><label for="i3" value="niece">Niece</label></li>
+
+        </ul>
+        <ul class="MyList">
+            <li><input id="i6" type="radio" /><label for="i6" value="family-friend">Family Friend</label></li>
+            <li><input id="i7"type="radio" /><label for="i7"  value="other">Other</label></li>
+            <li><label for="i7"  value="other"></label></li>
+        </ul>
+    </div>
+        <input class="btn btnl" type="button" onclick="formSubmit()" value="Done!!">
+      </div>
+
+<script>
+function formSubmit() {
+    document.forms["myForm"].submit();
+}
+</script>
+<script>
+
+document.getElementById("submit").onclick = function()
+{
+    var name = document.getElementById("name").value;
+    document.getElementById("output").innerHTML = "When is "+name+"'s <b>birthday?</b>";
+
+    var name2 = document.getElementById("name").value;
+    document.getElementById("output2").innerHTML = "Select "+name+"'s <b>gender</b>";
+
+    document.getElementById("form-1").style.display="none";
+    document.getElementById("form-2").style.display="block";
+
+}
+
+
+
+
+</script>
+<script>
+function myFunction() {
+	document.getElementById("form-2").style.display="none";
+	document.getElementById("form-3").style.display="block";
+}
+</script>
+<script>
+function myFunction2() {
+	document.getElementById("form-3").style.display="none";
+	document.getElementById("form-4-boy").style.display="block";
+}
+</script>
+<script>
+function myFunction3() {
+	document.getElementById("form-3").style.display="none";
+	document.getElementById("form-4-girl").style.display="block";
+}
+</script>
+</body>
+</html>
